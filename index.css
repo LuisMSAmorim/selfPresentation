@@ -49,6 +49,24 @@ html, body, #container {
     text-align: center;
     opacity: 0.8;
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#container .techs {
+    display: flex;
+    flex-direction: row;
+}
+
+#container .techs img {
+    height: 100px;
+    width: 100px;
+    margin: 15px 10px;
+}
+
+#container .techs img:hover {
+    height: 150px;
+    width: 150px;
+    transition: 0.5s;
 }
 
 #container .links {
@@ -76,6 +94,6 @@ html, body, #container {
 }
 
 #container .links a img:hover {
-    height: 60px;
+    height: 50px;
     transition: 0.5s;
 }
