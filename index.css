@@ -20,7 +20,9 @@ html, body, #container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     padding: 0 30px;
+    margin-block-start: auto;
 }
 
 #container > img {
@@ -101,4 +103,84 @@ html, body, #container {
 #container .links a img:hover {
     height: 50px;
     transition: 0.5s;
+}
+
+@media (max-height: 888px) {
+
+    #container > img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid black;
+    }
+    
+    
+    #container h1 {
+        font-size: 2.625rem;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    
+    #container h2 {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: 5px;
+        opacity: 0.6;
+    }
+    
+    #container p {
+        font-size: 20px;
+        max-width: 500px;
+        text-align: center;
+        opacity: 0.8;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    #container .techs {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #container .techs img {
+        height: 50px;
+        width: 50px;
+        margin: 10px 8px;
+    }
+    
+    #container .techs img:hover {
+        height: 100px;
+        width: 100px;
+        transition: 0.5s;
+    }
+    
+    #container .links {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #container .links a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 3px;
+        margin-left: 25px;
+    }
+    
+    #container .links a:hover {
+        color: black;
+        border-color: black;
+        transition: 0.2s;
+    }
+    
+    #container .links a img {
+        height: 40px;
+    }
+    
+    #container .links a img:hover {
+        height: 50px;
+        transition: 0.5s;
+    }
+
 }
